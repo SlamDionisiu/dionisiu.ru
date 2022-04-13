@@ -1,0 +1,54 @@
+html {
+    position: relative;
+    min-height: 100%;
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+    /*overflow-y: scroll;*/
+}
+
+
+.container {
+    box-shadow:0px 0px 100px rgba(0, 0, 0, 0.22);
+}
+
+body {
+    background-color: azure;
+}
+
+#header {
+    background-color: white;
+}
+
+#header .col {
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+    height: 6vh;
+    color: grey;
+    background-color: rgb(37, 37, 37);
+}
+
+#footer .col {
+    display: flex;
+    justify-content: center;
+}
+
+#page {
+    background-color: white;
+    min-height: 94vh;
+    overflow: hidden;
+}
+
+.side-menu{
+    width: 100%;
+}
+
+.sb-group{
+    margin-bottom: 10px;
+}
+
+.table-responsive {
+    margin-bottom: 10px;
+}
