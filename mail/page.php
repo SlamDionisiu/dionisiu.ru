@@ -7,10 +7,6 @@ if (isset($_POST) && !empty($_POST['mailto']) && !empty($_POST['latter'])){
 }
 ?>
 
-<h2>Тест почты</h2>
-<p>Попробуем отправить почту</p>
-<hr>
-
 <?php if ($mail_res==true && !empty($mail_res)):?>
     <div class="alert alert-success" role="alert">
         Ваше письмо отправлено
