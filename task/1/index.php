@@ -40,36 +40,8 @@ if (!empty($_POST['telInput'])){
     }
 }
 
-if (!empty($_POST['dateInput'])){
-    if (($timestamp = strtotime($_POST['dateInput'])) === false) {
-        $validate = false;
-        $validate_errors[] = "дата задана в неверном формате";
-    }
-}
-
 if (!empty($_POST['dateTimeInput'])){
     if (($timestamp = strtotime($_POST['dateTimeInputInput'])) === false) {
-        $validate = false;
-        $validate_errors[] = "дата задана в неверном формате";
-    }
-}
-
-if (!empty($_POST['timeInput'])){
-    if (($timestamp = strtotime($_POST['timeInputInput'])) === false) {
-        $validate = false;
-        $validate_errors[] = "дата задана в неверном формате";
-    }
-}
-
-if (!empty($_POST['weekInput'])){
-    if (($timestamp = strtotime($_POST['weekInputInput'])) === false) {
-        $validate = false;
-        $validate_errors[] = "дата задана в неверном формате";
-    }
-}
-
-if (!empty($_POST['monthInput'])){
-    if (($timestamp = strtotime($_POST['monthInputInput'])) === false) {
         $validate = false;
         $validate_errors[] = "дата задана в неверном формате";
     }
@@ -80,6 +52,10 @@ if (!empty($_POST['urlInput'])){
         $validate = false;
         $validate_errors[] = "URL задан неправильно";
     }
+}
+
+if (!empty($_POST['fileInput'])){
+
 }
 
 ?>
